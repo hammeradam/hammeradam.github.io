@@ -58,8 +58,8 @@ function Circle(x, y, rad, dx, dy) {
         c.strokeStyle = `rgba(${ this.r}, ${ this.g}, ${ this.b}, ${ this.a})`;
         c.strokeStyle = `rgba(${ this.r}, ${ this.g}, ${ this.b}, ${ this.a})`;
         c.fillStyle  = `rgba(${ this.r}, ${ this.g}, ${ this.b}, ${ this.a})`;
-        //c.stroke();
-        c.fill();
+        c.stroke();
+        //c.fill();
     }
 
     this.update = function() {
@@ -75,7 +75,7 @@ function Circle(x, y, rad, dx, dy) {
         // interacivity
        if (mouse.x - this.x < 50 && mouse.x - this.x > -50 &&
            mouse.y - this.y < 50 && mouse.y - this.y > -50) {
-            if (this.rad < maxRadius) this.rad += 2;
+            if (this.rad < maxRadius) this.rad += 5;
         } else if (this.rad > this.minRad) {
             this.rad -= 1;
         }
