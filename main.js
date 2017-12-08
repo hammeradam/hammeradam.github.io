@@ -109,8 +109,8 @@ function init () {
         const rad = Math.random() * 5 + 2;
         let x = Math.random() * (window.innerWidth - rad * 2) + rad;
         let y = Math.random() * (window.innerHeight - rad * 2) + rad;
-        let xdir = (Math.random() - 0.5) * 8;
-        let ydir = (Math.random() - 0.5) * 8;
+        let xdir = (Math.random() - 0.5) * 16;
+        let ydir = (Math.random() - 0.5) * 16;
     
         circleArray.push(new Circle(x, y, rad, xdir, ydir));
     }
