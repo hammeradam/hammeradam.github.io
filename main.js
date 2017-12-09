@@ -58,8 +58,8 @@ function Circle(x, y, rad, dx, dy) {
         c.strokeStyle = `rgba(${ this.r}, ${ this.g}, ${ this.b}, ${ this.a})`;
         c.strokeStyle = `rgba(${ this.r}, ${ this.g}, ${ this.b}, ${ this.a})`;
         c.fillStyle  = `rgba(${ this.r}, ${ this.g}, ${ this.b}, ${ this.a})`;
-        c.stroke();
-        //c.fill();
+        // c.stroke();
+        c.fill();
     }
 
     this.update = function() {
