@@ -12,6 +12,9 @@ function setup() {
     for (var i = 0; i < brickCount; i++) {
         bricks[i] = new Brick();
     }
+
+    winText = createP('Press SPACE to start and A or D to move.');
+    winText.position(width / 2 - 280, height - 200);
 }
 
 function draw() {
