@@ -1,88 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Canvas resize</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brick Breaker</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js" integrity="sha256-3t7gpD+/xy+brxk55l3wYgACIRGG28aPU1F2hWt5oOM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.sound.js" integrity="sha256-2+iExArY0ee0Ictv3zHa0/B4SbDREK9xsD8ktj4uRCI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.dom.js" integrity="sha256-B1ZM3gzk88A4V42oxOs8/tEGaiBqT0iClZVzFBeo3Ik=" crossorigin="anonymous"></script>
+    <script src="sketch.js"></script>
+    <script src="paddle.js"></script>
+    <script src="ball.js"></script>
+    <script src="brick.js"></script>
+</head>
+<body>
     <style>
-        canvas {
-            position: fixed;
-            border: 1px solid black;
-        }
-
-        html,
-        body {
+        html, body {
             margin: 0;
-            width: 100%;
-            height: 100%;
+            padding: 0;
             overflow: hidden;
-            /*  Disable scrollbars */
-            display: block;
-            background-color: black;
-        }
-
-        h1 {
-            color: white;
-        }
-
-        .title {
-            color: white;
-            align-content: center;
-            font-size: 50px;
-            font-family: Century Gothic, Tahoma, Arial, Helvetica, sans-serif;
-            vertical-align: center;
         }
     </style>
-</head>
-
-<body>
-    <canvas>
-    </canvas>
-    <center>
-        <!-- <h1 class="title">Adam Hammer</h1>
-
-        <a
-        target="_blank"
-        href="https://www.facebook.com/">
-        <img src="http://i.imgur.com/9GYMEcx.png" height="42" width="42" 
-        onmouseover="this.src='http://i.imgur.com/H1K1CIq.png';" 
-        onmouseout="this.src='http://i.imgur.com/9GYMEcx.png';"></a>
-
-        <a
-        target="_blank"
-        href="https://github.com/">
-        <img src="http://i.imgur.com/UP0eRuX.png" height="42" width="42"
-        onmouseover="this.src='http://i.imgur.com/qU4Llly.png';" 
-        onmouseout="this.src='http://i.imgur.com/UP0eRuX.png';"></a>
-
-        <a
-        target="_blank"
-        href="https://www.instagram.com/">
-        <img src="http://i.imgur.com/MR78g9A.png" height="42" width="42"
-        onmouseover="this.src='http://i.imgur.com/eIz0ZeP.png';" 
-        onmouseout="this.src='http://i.imgur.com/MR78g9A.png';"></a>
-
-        <a
-        target="_blank"
-        href="https://open.spotify.com/">
-        <img src="https://i.imgur.com/MuQ56SC.png" height="42" width="42"
-        onmouseover="this.src='https://i.imgur.com/7B1uevQ.png';" 
-        onmouseout="this.src='https://i.imgur.com/MuQ56SC.png';"></a>
-
-        <a
-        target="_blank"
-        href="https://twitter.com/">	
-        <img src="http://i.imgur.com/81PEHAq.png" height="42" width="42"onmouseover="this.src='http://i.imgur.com/LHK6BrG.png';" 
-        onmouseout="this.src='http://i.imgur.com/81PEHAq.png';"></a>
-
-        <a
-        target="_blank"
-        href="https://www.youtube.com/">
-        <img src="http://i.imgur.com/UWxTPlb.png" height="42" width="42"
-        onmouseover="this.src='http://i.imgur.com/B26eeY9.png';" 
-        onmouseout="this.src='http://i.imgur.com/UWxTPlb.png';"></a> -->
-    </center>
-    <script src="main.js"></script>
 </body>
-
 </html>
